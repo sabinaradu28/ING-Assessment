@@ -53,3 +53,23 @@
     - `var op : order.getOrderProducts()`
     - `"Product with ID %d not found".formatted(id)`
     - `Date.from(Instant.now())`
+
+# Unit Tests
+
+1. [x] OrderServiceImplTest
+
+    - Tested successful order placement with order cost, delivery cost rules and delivery time computation
+    - Tested invalid product ID
+    - Tested insufficient stock scenario
+
+
+2. [x] ProductServiceImplTest
+
+    - Tested retrieving all products
+    - Tested retrieving products by ID
+
+
+3. [x] OrderControllerTest
+
+    - Tested HTTP 200 OK response for valid order
+    - Tested HTTP 400 Bad Request for invalid order
